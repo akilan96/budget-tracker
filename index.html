@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="">
+    </head>
+    <body>
+        <main>
+            <div class="outer-wrap">
+             <div class="inner-wrap">
+                    <section>
+                        <div class="heading">
+                        <div class="main-heading">Budget Tracker</div>
+                        <div class="sub-heading">Just checking My Javascript Knowledge</div>
+                        </div>
+                    </section>
+                <section>
+                <div class="transaction-control">
+                    <div class="actions">
+                        <h3>Add Transaction</h3>
+                        <form class="add">
+                        <input type="text" name="source" placeholder="Source Name" autocomplete="off"/>
+                        <input type="text" name="amount" placeholder="Enter Amount" autocomplete="off"/>
+                        <input type="submit" value="Add Transaction" />
+                        </form>
+                    </div>
+                    <div class="statics">
+                        <h3>Statistics</h3>
+                        <p class="balance">
+                            Balance : $<span id="balance"></span></p>
+                        <p class="income">
+                            Income : $<span id="income"></span> </p>
+                        <p class="expense">
+                            Expense : $<span id="expense"></span></p>
+                    </div>
+                </div>
+                </section>
+                    <section>
+                        <div class="transaction-history">
+                            <h3>Transcation History</h3>
+                            <div class="records">
+                            <div class="income1">
+                                <h3>Income</h3>
+                                <ul class="income-list">
+                                    <li data-id="">
+                                        <p>
+                                            <span>Freelancing - Js Project</span>
+                                            <span id="time">12:45:38 AM 06/01/2024</span>
+                                        </p>
+                                        <span>$700</span>
+                                        <i class="bi bi-trash-fill delete"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="expense1">
+                                <h3>Expense</h3>
+                                <ul class="expense-list">
+                                    <li data-id="">
+                                        <p>
+                                            <span>Video Recording</span>
+                                            <span id="time">12:45:38 AM 06/01/2024</span>
+                                        </p>
+                                        <span>$300</span>
+                                        <i class="bi bi-trash-fill delete"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                    
+                        </div>
+                    </section>
+
+             </div>
+            </div>
+        
+        </main>
+      
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
